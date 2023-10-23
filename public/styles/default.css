@@ -1,0 +1,328 @@
+html {
+  scroll-padding: var(--scroll-padding, 5em);
+}
+
+main {
+  width: 75dvw;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  align-self: center;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.aplistdiv {
+  background-color: rgb(224, 224, 224);
+  width: 100%;
+  border-radius: 1em;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  padding: 1em;
+  margin-top: 3%;
+  align-items: center;
+}
+
+.aplisttitle {
+  font-weight: 700;
+  font-size: 2em;
+}
+
+.aplist {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25em;
+  font-weight: 600;
+  font-size: 1.3em;
+  text-align: center;
+  align-items: center;
+}
+
+.aplist a {
+  transition: all 350ms ease-out;
+}
+
+.aplist a:hover {
+  color: rgba(36, 36, 36, 0.753);
+}
+
+.apparition {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3em;
+  padding: 1em;
+}
+
+.aptitle {
+  font-weight: 700;
+  font-size: 2em;
+}
+
+.apimage {
+  width: 100%;
+}
+
+.apimagediv {
+  width: 85%;
+}
+
+.apcontent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.5em;
+  font-size: 1.3em;
+  font-weight: 400;
+  text-align: justify;
+}
+
+.apimagedivvert {
+  width: 40%;
+}
+
+.apimagedivm {
+  width: 60%;
+}
+
+@media all and (max-width: 910px) {
+  .aplisttitle {
+    text-align: start;
+    font-size: 1.8em;
+  }
+
+  .aplist {
+    font-size: 1.2em;
+  }
+
+  .aptitle {
+    font-size: 1.8em;
+    text-align: start;
+  }
+
+  .apcontent {
+    font-size: 1.1em;
+    gap: 2.3em;
+  }
+
+  .apparition {
+    gap: 2.7em;
+  }
+
+  .apimagedivvert {
+    width: 75%;
+  }
+}
+
+@media all and (max-width: 850px) {
+  main {
+    margin-top: 10%;
+    width: 85dvw;
+  }
+}
+
+@media all and (max-width: 768px) {
+  .aplisttitle {
+    font-size: 1.6em;
+  }
+
+  .aplist {
+    font-size: 1.1em;
+  }
+
+  .aptitle {
+    font-size: 1.6em;
+  }
+
+  .apcontent {
+    font-size: 1em;
+  }
+
+  .apimagediv {
+    width: 90%;
+  }
+
+  .apimagedivm {
+    width: 80%;
+  }
+}
+
+@media all and (max-width: 680px) {
+  .aplisttitle {
+    font-size: 1.4em;
+  }
+
+  .aplist {
+    font-size: 1em;
+  }
+
+  .aptitle {
+    font-size: 1.4em;
+  }
+
+  .apimagediv {
+    width: 100%;
+  }
+}
+
+@media all and (max-width: 590px) {
+  .aplisttitle {
+    font-size: 1.3em;
+    text-align: center;
+  }
+
+  .aplist {
+    font-size: 0.9em;
+  }
+
+  .aptitle {
+    font-size: 1.3em;
+    text-align: center;
+  }
+
+  .apcontent {
+    font-size: 0.8em;
+  }
+
+  .apimagedivm {
+    width: 100%;
+  }
+}
+
+@media all and (max-width: 420px) {
+  .aplist {
+    font-size: 0.8em;
+  }
+
+  .apcontent {
+    font-size: 0.7em;
+    font-weight: 500;
+  }
+}
+
+@media all and (max-width: 390px) {
+  .aplisttitle {
+    font-size: 1.1em;
+  }
+
+  .aptitle {
+    font-size: 1.1em;
+  }
+
+  .aplist {
+    font-size: 0.7em;
+  }
+}
+
+@media all and (min-width: 1455px) {
+  .aplisttitle {
+    font-size: 2.1em;
+  }
+
+  .aplist {
+    font-size: 1.2em;
+  }
+
+  .aptitle {
+    font-size: 2.1em;
+  }
+}
+
+@media all and (min-width: 1920px) {
+  .aplisttitle {
+    font-size: 2.5em;
+  }
+
+  .aplist {
+    font-size: 1.65em;
+  }
+
+  .aptitle {
+    font-size: 2.5em;
+  }
+
+  .apcontent {
+    font-size: 1.5em;
+  }
+}
+
+@media all and (min-width: 2340px) {
+  .aplisttitle {
+    font-size: 2.65em;
+  }
+
+  .aplist {
+    font-size: 1.8em;
+  }
+
+  .aptitle {
+    font-size: 2.65em;
+  }
+
+  .apcontent {
+    font-size: 1.6em;
+  }
+}
+
+@media all and (min-width: 2560px) {
+  .aplisttitle {
+    font-size: 2.8em;
+  }
+
+  .aplistdiv {
+    gap: 2.5em;
+  }
+
+  .aplist {
+    font-size: 2em;
+    gap: 0.5em;
+  }
+
+  .aptitle {
+    font-size: 2.8em;
+  }
+
+  .apcontent {
+    font-size: 1.9em;
+  }
+}
+
+@media all and (min-width: 3120px) {
+  .aplisttitle {
+    font-size: 3.3em;
+  }
+
+  .aplist {
+    font-size: 2.5em;
+  }
+
+  .aptitle {
+    font-size: 3.3em;
+  }
+
+  .apcontent {
+    font-size: 2.2em;
+  }
+}
+
+@media all and (min-width: 3840px) {
+  .aplisttitle {
+    font-size: 3.8em;
+  }
+
+  .aplist {
+    font-size: 3.2em;
+  }
+
+  .aptitle {
+    font-size: 3.8em;
+  }
+
+  .apcontent {
+    font-size: 3.1em;
+  }
+}

@@ -14,23 +14,27 @@ app.get("/help-us", (req, res) => {
 });
 
 app.get("/south-africa", (req, res) => {
-  res.render("pages/appearances/south_africa.ejs");
+  res.render("pages/apparitions/south_africa.ejs");
 });
 
 app.get("/france", (req, res) => {
-  res.render("pages/appearances/france.ejs");
+  res.render("pages/apparitions/france.ejs");
 });
 
 app.get("/portugal", (req, res) => {
-  res.render("pages/appearances/portugal.ejs");
+  res.render("pages/apparitions/portugal.ejs");
 });
 
+app.get("/fatima", (req, res) => {
+  res.render("pages/apparitions/sub-apparitions/fatima.ejs");
+})
+
 app.get("/brazil", (req, res) => {
-  res.render("pages/appearances/brazil.ejs");
+  res.render("pages/apparitions/brazil.ejs");
 });
 
 app.get("/spain", (req, res) => {
-  res.render("pages/appearances/spain.ejs");
+  res.render("pages/apparitions/spain.ejs");
 });
 
 app.listen(port, () => console.log(`Listening on ${port}`));

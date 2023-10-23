@@ -18,12 +18,13 @@ body {
 
 a,
 #dropbutton {
-  transition: opacity 250ms;
+  transition: all 350ms ease-out;
 }
 
 a:hover,
 #dropbutton:hover {
-  opacity: 0.75;
+  color: #050505c9;
+  opacity: 0.7;
   text-decoration: underline;
 }
 
@@ -58,7 +59,7 @@ html ::-webkit-scrollbar-track {
 /* Header Styling-------------------------------------------------------------------- */
 #header {
   padding-inline: 5%;
-  height: max-content
+  height: max-content;
 }
 
 #header > h2 {
@@ -151,11 +152,15 @@ html ::-webkit-scrollbar-track {
 
 @media all and (min-width: 3840px) {
   #header > h2 {
-    font-size: 5.8em;
+    font-size: 4.5em;
   }
 
   #container > ul > li {
-    font-size: 3.5em;
+    font-size: 3em;
+  }
+
+  #header {
+    padding-block: 0.5%;
   }
 }
 
@@ -218,13 +223,13 @@ html ::-webkit-scrollbar-track {
 #dropmenu a {
   border-radius: 0.2em;
   text-align: start;
-  padding: 0.3em .7em;
+  padding: 0.3em 0.7em;
   font-size: 100%;
   width: max-content;
 }
 
 #dropmenu a:hover {
-  color: rgba(0, 0, 0, 0.75);
+  color: rgba(0, 0, 0, 0.8);
   background-color: rgba(182, 182, 182, 0.726);
 }
 
@@ -238,7 +243,7 @@ html ::-webkit-scrollbar-track {
 
 /* Menu MediaQueries----------------------------------------------------------------- */
 
-@media all and (max-width: 768px) {
+@media all and (max-width: 850px) {
   #header {
     padding-block: 0.8em;
     position: fixed;
@@ -322,7 +327,9 @@ html ::-webkit-scrollbar-track {
     left: -25%;
     transform: none;
     transform: translatex(100%);
-    transition: transform 500ms, opacity 650ms;
+    transition:
+      transform 500ms,
+      opacity 650ms;
   }
 
   #drop > ul li {
@@ -332,7 +339,7 @@ html ::-webkit-scrollbar-track {
   #drop > ul li > a {
     width: 100%;
     text-align: center;
-  } 
+  }
 }
 
 @media all and (max-width: 450px) {
